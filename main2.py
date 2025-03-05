@@ -18,10 +18,9 @@ random_letter = letters.pop(rand.randint(0,len(apples)))
 #-----functions-----
 # given a turtle, set that turtle to be shaped by the image file
 def draw_apple(active_apple):
-  if letters:
-    active_apple.shape(apple_image)
-    active_apple.penup()
-    active_apple.goto(rand.randint(-200,200),rand.randint(-40,200))
+  active_apple.shape(apple_image)
+  active_apple.penup()
+  active_apple.goto(rand.randint(-200,200),rand.randint(-40,200))
   wn.update()
 
 def draw_letter():
