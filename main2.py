@@ -21,7 +21,7 @@ def draw_apple(active_apple):
   if letters:
     active_apple.shape(apple_image)
     active_apple.penup()
-    active_apple.goto(rand.randint(-100,100),rand.randint(-40,100))
+    active_apple.goto(rand.randint(-200,200),rand.randint(-40,200))
   wn.update()
 
 def draw_letter():
@@ -38,7 +38,7 @@ def falling_apple():
 
 def reset_apple():
   if letters:
-    apple.goto(rand.randint(-40,50),rand.randint(-40,50))
+    apple.goto(rand.randint(-200,200),rand.randint(-40,200))
   else:
     print("No letters left :(")
 
